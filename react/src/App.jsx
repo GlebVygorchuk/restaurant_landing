@@ -1,14 +1,19 @@
-import { useState } from 'react'
-import './App.css'
+import SectionHome from "./components/sectionHome/SectionHome"
+import SectionAboutUs from "./components/sectionAboutUs/SectionAboutUs"
+import SectionJointProject from "./components/sectionJointProject/SectionJointProject"
+import SectionMenu from "./components/sectionMenu/SectionMenu"
+import SectionInterior from "./components/sectionInterior/SectionInterior"
+import SectionContacts from "./components/sectionContacts/SectionContacts"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        TOMADE
-      </div>
+    <SectionHome />
+    <SectionAboutUs />
+    <SectionJointProject />
+    <SectionMenu />
+    <SectionInterior />
+    <SectionContacts />
     </>
   )
 }

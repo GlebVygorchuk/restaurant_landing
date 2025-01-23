@@ -1,0 +1,17 @@
+.section-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    font-size: 40px;
+    position: absolute;
+    z-index: 2;
+    margin: 0;
+}
+
+.blob {
+    z-index: 1;
+}

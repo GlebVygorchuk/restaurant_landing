@@ -1,0 +1,74 @@
+.homepage {
+    background-image: url('../assets/landingBg.jpg');
+    background-size: cover;
+    color: white;
+    padding: 75px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    &__navigation {
+
+        &_list {
+            display: flex;
+            column-gap: 45px;
+        }
+
+        &_item {
+            &_btn {
+                font-size: 20px;
+                font-weight: 700;
+                background: transparent;
+                border: none;
+                color: white;
+                cursor: pointer;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    background-color: white;
+                    height: 2px;
+                    width: 0%;
+                    transition: 0.2s;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    left: 0%;
+                }
+            }
+        }
+    }
+
+    &__info {
+        font-size: 20px;
+        font-weight: 300;
+        z-index: 2;
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 160px;
+}
+
+.description {
+    font-size: 20px;
+    margin-top: 87px;
+    margin-bottom: 37px;
+}
+
+.schedule {
+    font-size: 20px;
+    margin-bottom: 151px;
+    text-align: center;
+}
+

@@ -1,0 +1,22 @@
+@import 
+'../components/sectionHome/SectionHome',
+'../components/sectionAboutUs/SectionAboutUs',
+'../components/sectionJointProject/SectionJointProject',
+'../components/sectionMenu/SectionMenu',
+'../components/sectionInterior/SectionInterior',
+'../components/sectionContacts/SectionContacts',
+'../assets/sectionTitle/SectionTitle',
+'./fonts';
+
+body {
+    margin: 0;
+    font-family: "Inter";
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
