@@ -2,8 +2,8 @@ export default function SectionTitle({name}) {
     return (
         <div className="section-title">
             <h2 className="name">{name}</h2>
-            <svg className="blob" width="631" height="424" viewBox="0 0 631 424" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g clip-path="url(#clip0_1288_82)">
+            <svg className="blob" width="631" height="424" viewBox="0 0 631 424" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+<g clipPath="url(#clip0_1288_82)">
 <rect x="33.427" y="164.374" width="500.742" height="255.809" transform="rotate(-17.148 33.427 164.374)" fill="url(#pattern0_1288_82)"/>
 </g>
 <defs>

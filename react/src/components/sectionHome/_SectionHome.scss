@@ -1,13 +1,26 @@
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 .homepage {
     background-image: url('../assets/landingBg.jpg');
     background-size: cover;
     color: white;
-    padding: 75px;
+    opacity: 1!important;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    padding-top: 41px;
+    padding-inline: 67px;
 
     &__navigation {
 
@@ -46,10 +59,35 @@
     }
 
     &__info {
+        opacity: 0;
         font-size: 20px;
         font-weight: 300;
         z-index: 2;
+
+        animation: appear 0.5s forwards;
+        animation-delay: 0.2s;
     }
+}
+
+#menu-link {
+    opacity: 0;
+    animation: appear 0.5s forwards;
+}
+
+#aboutUs-link {
+    opacity: 0;
+    animation: appear 0.5s forwards;
+    animation-delay: 0.1s;
+}
+
+#contacts-link {
+    opacity: 0;
+    animation: appear 0.5s forwards;
+    animation-delay: 0.2s;
+}
+
+strong {
+    font-weight: 500;
 }
 
 .main {
@@ -57,18 +95,34 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 160px;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.logo {
+    opacity: 0;
+    animation: appear 0.5s forwards;
+    animation-delay: 0.3s;
 }
 
 .description {
-    font-size: 20px;
-    margin-top: 87px;
-    margin-bottom: 37px;
+    opacity: 0;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    animation: appear 0.5s forwards;
+    animation-delay: 0.4s;
+    background-color: black;
+    padding: 10px;
 }
 
 .schedule {
-    font-size: 20px;
+    opacity: 0;
     margin-bottom: 151px;
     text-align: center;
+    animation: appear 0.5s forwards;
+    animation-delay: 0.5s;
+    background-color: black;
+    padding: 10px;
 }
 

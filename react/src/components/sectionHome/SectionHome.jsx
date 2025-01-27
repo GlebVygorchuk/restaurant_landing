@@ -1,17 +1,17 @@
-export default function SectionMain() {
+export default function SectionHome({className, id}) {
     return (
-        <section className="homepage">
+        <section id={id} className={className}>
         <header className="header">
             <nav className="header__navigation">
                 <ul className="header__navigation_list">
-                    <li className="header__navigation_item">
-                        <button className="header__navigation_item_btn">МЕНЮ</button>
+                    <li className="header__navigation_item" id="menu-link">
+                        <a href="#menu" className="header__navigation_item_btn">МЕНЮ</a>
                     </li>
-                    <li className="header__navigation_item">
-                        <button className="header__navigation_item_btn">О НАС</button>
+                    <li className="header__navigation_item" id="aboutUs-link">
+                        <a href="#aboutUs" className="header__navigation_item_btn">О НАС</a>
                     </li>
-                    <li className="header__navigation_item">
-                        <button className="header__navigation_item_btn">КОНТАКТЫ</button>
+                    <li className="header__navigation_item" id="contacts-link">
+                        <a href="#contacts" className="header__navigation_item_btn">КОНТАКТЫ</a>
                     </li>
                 </ul>
             </nav>
@@ -22,7 +22,7 @@ export default function SectionMain() {
         </header>
 
         <main className="main">
-            <svg className="logo" width="353" height="308" viewBox="0 0 353 308" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg className="logo" width="270" height="220" viewBox="0 0 353 308" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
             <rect width="353" height="308" fill="url(#pattern0_1285_24)"/>
             <defs>
             <pattern id="pattern0_1285_24" patternContentUnits="objectBoundingBox" width="1" height="1">
