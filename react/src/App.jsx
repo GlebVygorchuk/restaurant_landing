@@ -47,7 +47,7 @@ function App() {
     <SectionInterior id={'interior'} className={`section interior${visibleSections.includes('section interior') ? ' visible' : ""}`}/>
     <SectionContacts id={'contacts'} className={`section contacts${visibleSections.includes('section contacts') ? ' visible' : ""}`}/>
 
-    <a href="#home" className={window.scrollY > 1000 ? "to-home visible" : "to-home"}>
+    <a href="#home" className={window.scrollY > 800 ? "to-home visible" : "to-home"}>
       <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 5V19M12 5L6 11M12 5L18 11" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>

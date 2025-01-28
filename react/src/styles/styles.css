@@ -145,6 +145,14 @@ strong {
   text-align: center;
 }
 
+.content {
+  font-size: 24px;
+  font-weight: 300;
+  padding-inline: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .section-title {
   position: relative;
   display: flex;
