@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://GlebVygorchuk.github.io/restaurant_landing",
+  "homepage": "https://glebvygorchuk.github.io/restaurant_landing",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
