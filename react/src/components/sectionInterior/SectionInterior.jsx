@@ -5,7 +5,25 @@ export default function SectionInterior({className, id}) {
         <section id={id} className={className}>
             <SectionTitle name={'Интерьер'} /> 
 
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, in. Explicabo architecto expedita ex ipsum corporis harum velit qui at voluptatum deserunt reiciendis accusamus molestias aut delectus quis, quaerat dolorem. Dicta, unde tempore? Laudantium voluptates consequuntur esse incidunt exercitationem at eius earum quam rem? Eius quia tempore ipsum laborum ipsa deleniti nihil a, fugiat, nemo suscipit perferendis odio, quas similique quaerat eveniet vero consequatur magnam ex alias expedita nesciunt nulla doloribus! Blanditiis dignissimos eligendi vel incidunt nihil quas minus mollitia beatae voluptates ut temporibus nulla consequatur, ad praesentium, quam nemo voluptate. Maiores ratione voluptates nihil quibusdam reiciendis autem impedit quaerat?</h1>
+            <div className="pictures">
+                <div className="pictures__section">
+                    <img src="./src/assets/interiorPics/fusion2.png" alt="" />
+                    <img src="./src/assets/interiorPics/sirovarnya 1.png" alt="" />
+                    <img src="./src/assets/interiorPics/kinovecher.png" alt="" />
+                    <img src="./src/assets/interiorPics/dinner 1.png" alt="" />
+                </div>
+                <div className="pictures__section">
+                    <img src="./src/assets/interiorPics/pasta 1.png" alt="" />
+                    <img src="./src/assets/interiorPics/restik 1.png" alt="" />
+                    <img src="./src/assets/interiorPics/dinnerfamily 1.png" alt="" />
+                </div>
+                <div className="pictures__section">
+                    <img src="./src/assets/interiorPics/egs 1.png" alt="" />
+                    <img src="./src/assets/interiorPics/window 1.png" alt="" />
+                    <img src="./src/assets/interiorPics/windowrest 1.png" alt="" />
+                    <img src="./src/assets/interiorPics/kino 1.png" alt="" />
+                </div>
+            </div>
         </section>
     )
 }

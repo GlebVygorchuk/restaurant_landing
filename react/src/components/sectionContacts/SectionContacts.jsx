@@ -23,7 +23,7 @@ export default function SectionContacts({className, id}) {
                     <br />
                     <p>Вкусные блюда и киношедевры <br />ждут вас!</p>
                 </div>
-                <iframe style={{border: "none", borderRadius: "40px", boxShadow: "0px 0px 20px #cacaca"}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d958.3634313422261!2d61.388626266971826!3d55.15903617732097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c592b131f3bf6b%3A0x17807db860ac7312!2z0KfQk9Cf0KMsINCk0LDQutGD0LvRjNGC0LXRgiDQuNC90L7RgdGC0YDQsNC90L3Ri9GFINGP0LfRi9C60L7Qsg!5e0!3m2!1sru!2sru!4v1738063081007!5m2!1sru!2sru" width="548" height="304" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe style={{border: "none", borderRadius: "40px", boxShadow: "0px 0px 20px #cacaca"}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1355.3109715709427!2d61.387884933182804!3d55.15961265789654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c5ed0b6191f387%3A0x9ed37620e3e6759f!2z0K7QttC90L4t0KPRgNCw0LvRjNGB0LrQuNC5INCz0L7RgdGD0LTQsNGA0YHRgtCy0LXQvdC90YvQuSDQs9GD0LzQsNC90LjRgtCw0YDQvdC-LdC_0LXQtNCw0LPQvtCz0LjRh9C10YHQutC40Lkg0YPQvdC40LLQtdGA0YHQuNGC0LXRgg!5e0!3m2!1sru!2sru!4v1738150318060!5m2!1sru!2sru" width="548" height="304" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     )

@@ -4,5 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/restaurant_landing/"
+  base: "/restaurant_landing/",
+  server: {
+    historyApiFallback: true
+  }
 })

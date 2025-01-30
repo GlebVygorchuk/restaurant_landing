@@ -1,0 +1,11 @@
+.pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 21px;
+
+    &__section {
+        display: flex;
+        gap: 21px;
+    }
+}

@@ -145,6 +145,62 @@ strong {
   text-align: center;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chapters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  padding-inline: 82px;
+}
+.chapters__header {
+  display: flex;
+  -moz-column-gap: 57px;
+       column-gap: 57px;
+  margin-bottom: 57px;
+}
+.chapters__footer {
+  display: flex;
+  -moz-column-gap: 57px;
+       column-gap: 57px;
+}
+.chapters__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0px 0px 10px #888888;
+}
+.chapters__item p {
+  position: absolute;
+  align-self: center;
+}
+.chapters__item:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 15px 25px #888888;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 21px;
+}
+.pictures__section {
+  display: flex;
+  gap: 21px;
+}
+
 .content {
   font-size: 24px;
   font-weight: 300;

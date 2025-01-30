@@ -1,13 +1,20 @@
 import SectionHome from "./components/sectionHome/SectionHome"
 import SectionAboutUs from "./components/sectionAboutUs/SectionAboutUs"
-import SectionJointProject from "./components/sectionJointProject/SectionJointProject"
 import SectionMenu from "./components/sectionMenu/SectionMenu"
 import SectionInterior from "./components/sectionInterior/SectionInterior"
 import SectionContacts from "./components/sectionContacts/SectionContacts"
+import MenuBreakfast from "./components/menuBreakfast/MenuBreakfast"
+import MenuDinner from "./components/menuDinner/MenuDinner"
+import MenuBar from "./components/menuBar/MenuBar"
+import MenuChildren from "./components/menuChildren/MenuChildren"
+import MenuGrill from "./components/menuGrill/MenuGrill"
+import { AppContext } from "./AppContext"
+import { useContext } from "react"
 import { useState, useEffect } from "react"
 
 function App() {
   const [visibleSections, setVisibleSections] = useState([])
+  const {menuChapter, setMenuChapter} = useContext(AppContext)
 
   useEffect(() => {
     let timeout
@@ -21,7 +28,7 @@ function App() {
       
         sections.forEach(section => {
           const rect = section.getBoundingClientRect()
-          if (rect.top >= -300 && rect.top < window.innerHeight - 200) {
+          if (rect.top >= -50 && rect.top < window.innerHeight - 50) {
             if (!visible.includes(section.className)) {
               visible.push(section.className)
             }
@@ -40,14 +47,27 @@ function App() {
 
   return (
     <>
+    {menuChapter === '' ?
+    <>
     <SectionHome id={'home'} className={'section homepage'}/>
     <SectionAboutUs id={'aboutUs'} className={`section about-us${visibleSections.includes('section about-us') ? ' visible' : ""}`}/>
-    <SectionJointProject id={'jointProject'} className={`section joint-project${visibleSections.includes('section joint-project') ? ' visible' : ""}`}/>
     <SectionMenu id={'menu'} className={`section menu${visibleSections.includes('section menu') ? ' visible' : ""}`}/>
     <SectionInterior id={'interior'} className={`section interior${visibleSections.includes('section interior') ? ' visible' : ""}`}/>
     <SectionContacts id={'contacts'} className={`section contacts${visibleSections.includes('section contacts') ? ' visible' : ""}`}/>
+    </> 
+    : null}
 
-    <a href="#home" className={window.scrollY > 800 ? "to-home visible" : "to-home"}>
+    {menuChapter === 'menu-breakfast' ? <MenuBreakfast /> : null}
+
+    {menuChapter === 'menu-dinner' ? <MenuDinner/> : null}
+
+    {menuChapter === 'menu-bar' ? <MenuBar /> : null}
+
+    {menuChapter === 'menu-children' ? <MenuChildren /> : null}
+
+    {menuChapter === 'menu-grill' ? <MenuGrill/> : null}
+  
+    <a href="#home" className={window.scrollY > 700 ? "to-home visible" : "to-home"}>
       <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 5V19M12 5L6 11M12 5L18 11" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
