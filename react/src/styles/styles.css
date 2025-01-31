@@ -187,7 +187,7 @@ strong {
 }
 .chapters__item:hover {
   transform: translateY(-15px);
-  box-shadow: 0px 15px 25px #888888;
+  box-shadow: 0px 15px 20px #888888;
 }
 
 .pictures {
