@@ -7,34 +7,34 @@ import fusionImg from "../../assets/fusion.png"
 export default function SectionAboutUs({className, id}) {
     return (
         <section id={id} className={className}>
-            <SectionTitle name={'Что такое Tomade'} />
+            <SectionTitle name={'What is Tomade?'} />
 
             <ul className="features">
                 <li className="features__item">
                     <div className="features__item_desc">
-                        <p style={{fontWeight: '500'}}>Завтраки</p>
-                        <p className="features__item_explain">Ежедневно<br /> до 15.00</p>
+                        <p style={{fontWeight: '500'}}>Breakfasts</p>
+                        <p className="features__item_explain">Daily<br /> to 15.00</p>
                     </div>
                     <img src={breakfastImg} alt="" />
                 </li>
                 <li className="features__item">
                     <div className="features__item_desc">
-                        <p style={{fontWeight: '500'}}>Детская комната с няней</p>
-                        <p className="features__item_explain">Чтобы всем было<br /> уютно и спокойно</p>
+                        <p style={{fontWeight: '500'}}>Children's room with nanny</p>
+                        <p className="features__item_explain">So that everyone feels<br /> comfortable and calm</p>
                     </div>
                     <img src={playgroundImg} alt="" />
                 </li>
                 <li className="features__item">
                     <div className="features__item_desc">
-                        <p style={{fontWeight: '500'}}>Киновечера</p>
-                        <p className="features__item_explain">Даже дома не такая<br /> магическая атмосфера</p>
+                        <p style={{fontWeight: '500'}}>Movie nights</p>
+                        <p className="features__item_explain">Even at home the atmosphere<br /> is not so magical</p>
                     </div>
                     <img src={filmsImg} alt="" />
                 </li>
                 <li className="features__item">
                     <div className="features__item_desc">
-                        <p style={{fontWeight: '500'}}>Фьюжн меню</p>
-                        <p className="features__item_explain">Авторская кухня, где<br /> каждое блюдо уникально</p>
+                        <p style={{fontWeight: '500'}}>Fusion menu</p>
+                        <p className="features__item_explain">Signature cuisine, where<br /> each dish is unique</p>
                     </div>
                     <img src={fusionImg} alt="" />
                 </li>

@@ -186,8 +186,8 @@ strong {
   align-self: center;
 }
 .chapters__item:hover {
-  transform: translateY(-15px);
-  box-shadow: 0px 15px 20px #888888;
+  transform: translateY(-20px);
+  box-shadow: 0px 20px 20px #888888;
 }
 
 .pictures {
@@ -209,6 +209,45 @@ strong {
   justify-content: space-between;
 }
 
+.menu-chapter {
+  padding-top: 120px;
+  padding-inline: 85px;
+  opacity: 0;
+  animation: emerge 0.5s forwards;
+}
+@keyframes emerge {
+  to {
+    opacity: 1;
+  }
+}
+.menu-chapter__title {
+  display: flex;
+  flex-direction: column;
+  row-gap: 42px;
+  text-align: center;
+}
+
+.time {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.title-name {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.warning {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 67px;
+}
+
 .section-title {
   position: relative;
   display: flex;
@@ -227,6 +266,33 @@ strong {
   z-index: 1;
 }
 
+.menu-item {
+  display: flex;
+  -moz-column-gap: 42px;
+       column-gap: 42px;
+}
+.menu-item__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.menu-item__info {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-item__title, .menu-item__price {
+  font-size: 30px;
+  font-weight: 700;
+}
+.menu-item__price {
+  margin-top: 50px;
+}
+.menu-item__description {
+  font-size: 24px;
+  font-weight: 300;
+  width: 65%;
+}
+
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-VariableFont_opsz,wght.woff2");
@@ -238,7 +304,7 @@ html {
 body {
   margin: 0;
   font-family: "Inter";
-  padding-bottom: 200px;
+  padding-bottom: 50px;
 }
 
 p {
@@ -274,7 +340,7 @@ a {
   left: 15px;
   padding: 5px 10px;
   background-color: #ffc100;
-  transition: 0.5s;
+  transition: 0.3s;
   border-radius: 10px;
   transform: translateY(-20px);
   cursor: default;
@@ -287,4 +353,49 @@ a {
   opacity: 1 !important;
   transform: translateY(0px) !important;
   cursor: pointer;
+}
+
+.chapter-header {
+  background-color: #FDBD00;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  padding-inline: 310px;
+  padding-block: 20px;
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+  transform: translateY(-80px);
+  animation: show 0.5s forwards;
+}
+@keyframes show {
+  to {
+    transform: translateY(0px);
+  }
+}
+.chapter-header_btn {
+  background: transparent;
+  border: none;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+}
+.chapter-header_btn::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  background-color: black;
+  height: 2.5px;
+  width: 0%;
+  transition: 0.2s;
+}
+.chapter-header_btn:hover::after {
+  width: 100%;
+  left: 0%;
 }/*# sourceMappingURL=styles.css.map */

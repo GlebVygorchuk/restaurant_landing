@@ -4,12 +4,9 @@
 '../components/sectionMenu/SectionMenu',
 '../components/sectionInterior/SectionInterior',
 '../components/sectionContacts/SectionContacts',
-'../components/menuBar/MenuBar',
-'../components/menuBreakfast/MenuBreakfast',
-'../components/menuChildren/MenuChildren',
-'../components/menuDinner/MenuDinner',
-'../components/menuGrill/MenuGrill',
+'../components/MenuChapters',
 '../assets/sectionTitle/SectionTitle',
+'../components/menuItem/MenuItem',
 './fonts';
 
 html {
@@ -19,7 +16,7 @@ html {
 body {
     margin: 0;
     font-family: "Inter";
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 }
 
 p {
@@ -55,7 +52,7 @@ a {
     left: 15px;
     padding: 5px 10px;
     background-color: #ffc100;
-    transition: 0.5s;
+    transition: 0.3s;
     border-radius: 10px;
     transform: translateY(-20px);
     cursor: default;
@@ -69,4 +66,51 @@ a {
     opacity: 1!important;
     transform: translateY(0px)!important;
     cursor: pointer;
+}
+
+.chapter-header {
+    @keyframes show {
+        to {transform: translateY(0px);}
+    }
+
+    background-color: #FDBD00;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    padding-inline: 310px;
+    padding-block: 20px;
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    left: 0;
+    box-sizing: border-box;
+    transform: translateY(-80px);
+    animation: show 0.5s forwards;
+
+    &_btn {
+        background: transparent;
+        border: none;
+        font-family: "Inter";
+        font-size: 24px;
+        font-weight: 700;
+        cursor: pointer;
+        position: relative;
+        margin: 0;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            background-color: black;
+            height: 2.5px;
+            width: 0%;
+            transition: 0.2s;
+        }
+
+        &:hover::after {
+            width: 100%;
+            left: 0%;
+        }
+    }
 }

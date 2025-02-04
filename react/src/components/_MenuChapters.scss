@@ -1,0 +1,37 @@
+.menu-chapter {
+    @keyframes emerge {
+        to {opacity: 1;}
+    }
+    padding-top: 120px;
+    padding-inline: 85px;
+    opacity: 0;
+    animation: emerge 0.5s forwards;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        row-gap: 42px;
+        text-align: center;
+    }
+}
+
+.time {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.title-name {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.warning {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 67px;
+}

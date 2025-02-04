@@ -14,7 +14,7 @@ import interiorCinema from "../../assets/interiorPics/kino 1.png"
 export default function SectionInterior({className, id}) {
     return (
         <section id={id} className={className}>
-            <SectionTitle name={'Интерьер'} /> 
+            <SectionTitle name={'Interior'} /> 
 
             <div className="pictures">
                 <div className="pictures__section">

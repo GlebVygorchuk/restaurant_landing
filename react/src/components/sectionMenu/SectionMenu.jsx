@@ -10,36 +10,39 @@ import { useContext } from "react"
 export default function SectionMenu({className, id}) {
     const {menuChapter, setMenuChapter} = useContext(AppContext)
 
-    console.log(menuChapter)
+    function goToMenu(chapter) {
+        setMenuChapter(chapter)
+        window.scrollTo({top: 0, behavior: 'instant'})
+    }
 
     return (
         <section id={id} className={className}>
-            <SectionTitle name={'Меню'}/>
+            <SectionTitle name={'Menu'}/>
 
             <div className="chapters">
                 <div className="chapters__header">
-                    <div onClick={() => setMenuChapter('menu-breakfast')} className="chapters__item">
+                    <div onClick={() => goToMenu('menu-breakfast')} className="chapters__item">
                        <img src={breakfastBtn} alt="" />
-                       <p>Завтраки</p>
+                       <p>Breakfasts</p>
                     </div>
-                   <div onClick={() => setMenuChapter('menu-dinner')} className="chapters__item">
+                   <div onClick={() => goToMenu('menu-dinner')} className="chapters__item">
                        <img src={dinnerBtn} alt="" />
-                       <p>Основное</p>
+                       <p>Main</p>
                    </div>
-                   <div onClick={() => setMenuChapter('menu-bar')} className="chapters__item">
+                   <div onClick={() => goToMenu('menu-bar')} className="chapters__item">
                        <img src={barBtn} alt="" />
-                       <p>Барное</p>
+                       <p>Bar</p>
                    </div>
                 </div>
                 
                 <div className="chapters__footer">
-                   <div onClick={() => setMenuChapter('menu-children')} className="chapters__item">
+                   <div onClick={() => goToMenu('menu-children')} className="chapters__item">
                        <img src={chidlrenBtn} alt="" />
-                       <p>Детское</p>
+                       <p>Children's</p>
                    </div>
-                   <div onClick={() => setMenuChapter('menu-grill')} className="chapters__item">
+                   <div onClick={() => goToMenu('menu-grill')} className="chapters__item">
                        <img src={grillBtn} alt="" />
-                       <p>Гриль меню</p>
+                       <p>Grill menu</p>
                    </div>
                 </div>
             </div>

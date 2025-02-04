@@ -14,7 +14,12 @@ import { useState, useEffect } from "react"
 
 function App() {
   const [visibleSections, setVisibleSections] = useState([])
-  const {menuChapter, setMenuChapter} = useContext(AppContext)
+  const {menuChapter, toHome, setMenuChapter, setToHome} = useContext(AppContext)
+
+  useEffect(() => {
+    setToHome(false)
+    toHome ? setMenuChapter('') : null
+  }, [toHome])
 
   useEffect(() => {
     let timeout
@@ -28,7 +33,7 @@ function App() {
       
         sections.forEach(section => {
           const rect = section.getBoundingClientRect()
-          if (rect.top >= -50 && rect.top < window.innerHeight - 50) {
+          if (rect.top >= -200 && rect.top < window.innerHeight - 200) {
             if (!visible.includes(section.className)) {
               visible.push(section.className)
             }
@@ -54,6 +59,12 @@ function App() {
     <SectionMenu id={'menu'} className={`section menu${visibleSections.includes('section menu') ? ' visible' : ""}`}/>
     <SectionInterior id={'interior'} className={`section interior${visibleSections.includes('section interior') ? ' visible' : ""}`}/>
     <SectionContacts id={'contacts'} className={`section contacts${visibleSections.includes('section contacts') ? ' visible' : ""}`}/>
+
+    <a href="#home" className={window.scrollY > 700 ? "to-home visible" : "to-home"}>
+      <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 5V19M12 5L6 11M12 5L18 11" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    </a>
     </> 
     : null}
 
@@ -67,11 +78,6 @@ function App() {
 
     {menuChapter === 'menu-grill' ? <MenuGrill/> : null}
   
-    <a href="#home" className={window.scrollY > 700 ? "to-home visible" : "to-home"}>
-      <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 5V19M12 5L6 11M12 5L18 11" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    </a>
     </>
   )
 }
