@@ -294,8 +294,8 @@ strong {
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-VariableFont_opsz,wght.woff2");
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-VariableFont_wght.ttf");
 }
 html {
   scroll-behavior: smooth;
@@ -303,7 +303,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter";
+  font-family: "Quicksand";
   padding-bottom: 50px;
 }
 
@@ -360,6 +360,9 @@ a {
   display: flex;
   align-content: center;
   justify-content: space-around;
+  border-bottom-right-radius: 15%;
+  border-bottom-left-radius: 15%;
+  border: 1.5px solid #dda600;
   padding-inline: 310px;
   padding-block: 20px;
   position: fixed;
@@ -367,6 +370,7 @@ a {
   right: 0;
   left: 0;
   box-sizing: border-box;
+  box-shadow: 0px 0px 5px #9d7600;
   transform: translateY(-80px);
   animation: show 0.5s forwards;
 }
@@ -378,7 +382,7 @@ a {
 .chapter-header_btn {
   background: transparent;
   border: none;
-  font-family: "Inter";
+  font-family: "Quicksand";
   font-size: 24px;
   font-weight: 700;
   cursor: pointer;
